@@ -2,9 +2,9 @@ import { useChatActions } from '../state/ChatContext'
 import { Logo } from './ui/icons'
 
 const SUGGESTIONS = [
-  { title: 'Find a home', prompt: 'Show me 2-bed flats to rent under £1,500' },
+  { title: 'Find a home', prompt: 'Show me 2 BHK flats to rent under ₹30,000' },
   { title: 'Book a viewing', prompt: 'Can I book a viewing this week?' },
-  { title: 'Report a repair', prompt: 'My boiler has stopped working' },
+  { title: 'Report a repair', prompt: 'My geyser has stopped working' },
   { title: 'Ask about deposits', prompt: 'How does deposit protection work?' },
 ]
 

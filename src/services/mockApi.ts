@@ -18,18 +18,18 @@ interface MockOptions extends StreamOptions {
 const REPLIES: Array<{ match: RegExp; reply: string }> = [
   {
     match: /simulate error/i,
-    reply: `Good news – all three properties are **still available**. The Riverside Court flat has had the most interest this week, so I'd book a viewing soon if it's on your list.`,
+    reply: `Good news – all three properties are **still available**. The 2 BHK in Baner has had the most interest this week, so I'd book a viewing soon if it's on your list.`,
   },
   {
     match: /deposit/i,
-    reply: `Here's how tenancy deposits work in England:
+    reply: `Here's how security deposits work under the **Model Tenancy Act, 2021**:
 
-- **Cap:** for most tenancies the deposit is capped at **5 weeks' rent** (6 weeks if the annual rent is £50,000 or more).
-- **Protection:** your landlord or agent must put it in a government-approved deposit protection scheme **within 30 days** of receiving it.
-- **Paperwork:** you should receive the "prescribed information" telling you which scheme holds it.
-- **Getting it back:** at the end of the tenancy, any deductions must be justified – for example damage beyond normal wear and tear.
+- **Cap:** for residential homes the deposit can't exceed **2 months' rent** (6 months for commercial premises).
+- **Where it applies:** it's a model law, so it only applies in states and UTs that have adopted it. Elsewhere, deposits of 6–10 months are still common in some cities.
+- **Paperwork:** the deposit amount should be written into your **rent agreement**.
+- **Getting it back:** the landlord should refund it when you move out, minus any dues agreed in the agreement, such as unpaid rent or damage beyond normal wear and tear.
 
-If you think your deposit wasn't protected, I can help you draft a message to your agent.`,
+If your landlord is asking for more than the cap, I can help you draft a message to them.`,
   },
   {
     match: /view|book|visit/i,
@@ -37,21 +37,21 @@ If you think your deposit wasn't protected, I can help you draft a message to yo
 
 | Day | Time | Property |
 | --- | --- | --- |
-| Tuesday | 10:30 | 2-bed flat, Riverside Court |
-| Wednesday | 17:45 | 1-bed flat, Elm Street |
-| Saturday | 11:00 | 3-bed house, Oakfield Road |
+| Tuesday | 10:30 | 2 BHK flat, Baner |
+| Wednesday | 17:45 | 1 BHK flat, Kothrud |
+| Saturday | 11:00 | 3 BHK flat, Viman Nagar |
 
 Just reply with the slot you'd like and I'll confirm it with the letting agent.`,
   },
   {
-    match: /repair|broken|leak|boiler|heating|maintenance/i,
+    match: /repair|broken|leak|geyser|boiler|water|maintenance/i,
     reply: `Sorry to hear that. Here's the quickest way to get it fixed:
 
 1. **Tell me what's wrong** – which room, what you've noticed and when it started.
 2. **Add a photo** if you can; it helps the contractor bring the right parts.
-3. **Urgent issues** such as no heating in winter, a gas smell or a serious leak are treated as emergencies and passed to the on-call contractor straight away.
+3. **Urgent issues** such as no water supply, a gas smell or a serious leak are treated as emergencies and passed to the on-call contractor straight away.
 
-> If you smell gas, leave the property and call the National Gas Emergency line on **0800 111 999** first.
+> If you smell gas, leave the property and call the emergency helpline **112** first.
 
 What's the issue you're seeing?`,
   },
@@ -61,9 +61,9 @@ What's the issue you're seeing?`,
 
 | Property | Rent | Available |
 | --- | --- | --- |
-| 1-bed flat, Elm Street | £1,150 pcm | Now |
-| 2-bed flat, Riverside Court | £1,475 pcm | 1 Dec |
-| 3-bed house, Oakfield Road | £1,850 pcm | 15 Dec |
+| 1 BHK flat, Kothrud | ₹18,000/month | Now |
+| 2 BHK flat, Baner | ₹28,500/month | 1 Dec |
+| 3 BHK flat, Viman Nagar | ₹42,000/month | 15 Dec |
 
 Tell me your **budget**, **preferred area** and **move-in date** and I'll narrow this down.`,
   },
